@@ -116,7 +116,7 @@
             <button><a href="gt.html"><font size="6" color="black">Giới thiệu</font></a></button>
         </div>
         <div class="dropdown">
-            <button><a href="cottruyen.html"><font size="6" color="black">Cốt truyện</font></a></button>
+            <button><a href="Cottruyen.html"><font size="6" color="black">Cốt truyện</font></a></button>
         </div>
 
         <div class="dropdown">
