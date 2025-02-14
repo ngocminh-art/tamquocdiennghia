@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách nhân vật Tam Quốc</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            background-image: url('https://i.pinimg.com/736x/59/74/ac/5974ac54f77d6b98a55e6a0604e59360.jpg');
+            background-size: cover; 
+            background-attachment: fixed; 
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+        
+        .menu {
+            text-align: left;
+            background-color: #FFECB3;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            cursor: url('https://banner2.cleanpng.com/20180426/ogq/kisspng-sword-mod-db-weapon-sword-harrow-5ae197bb115524.253621851524733883071.jpg'), auto;
+        }
+
+        .dropdown {
+            display: inline-block;
+            position: relative;
+            margin: 0 10px;
+        }
+
+        .dropdown button {
+            font-size: 30px;
+            background-color:#FFECB3;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.8);
+            min-width: 250px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            display: block;
+            padding: 10px;
+            color: black;
+            font-size: 24px;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .content {
+            padding-top: 20px;  /* Tạo khoảng cách từ đầu trang */
+            text-align: center;
+            margin-top: 20px; /* Tạo khoảng cách từ phần menu */
+        }
+
+        .content h1 {
+            margin-bottom: 40px;  
+            font-size: 40px;  /* Tăng kích thước chữ tiêu đề */
+            color: black;
+            font-family: Tahoma, sans-serif;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap; /* Cho phép các phần tử xếp thành nhiều hàng */
+            justify-content: center;
+            gap: 15px;
+            text-align: center;
+            max-width: 1200px;
+            margin-top: 80px; /* Thêm khoảng cách từ tiêu đề đến các nhân vật */
+        }
+
+        .character {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            width: 200px; /* Đặt chiều rộng cố định cho mỗi phần tử */
+        }
+
+        .avatar {
+            width: 180px;
+            height: 220px;
+            border-radius: 5px;
+            background-color: lightgray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            font-weight: bold;
+            overflow: hidden;
+        }
+
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+
+        .name {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+   <div class="menu">
+        <div class="dropdown">
+            <button><a href="ngocminh.html"><font size="6" color="black"><b>Quay về trang chủ</b></font></a></button>
+        </div>
+   </div>
+
+   <div class="container">
+        <div class="character">
+             <a href="dongtrac.html">
+                <div class="avatar">
+                    <img src="28e4-fyrcsrw0481266-1593267580030988684384-15932677835981810231701.webp" alt="Đổng Trác">
+                 </div>
+              </a>
+            <div class="name">Đổng Trác</div>
+        </div>
+        <div class="character">
+             <a href="lubu.html">
+                <div class="avatar">
+                    <img src="20.jpg" alt="Lữ Bố">
+                 </div>
+              </a>
+            <div class="name">Lữ Bố</div>
+        </div>
+        <div class="character">
+            <a href="vienthieu.html">
+                <div class="avatar">
+                    <img src="71.jpg" alt="Viên Thiệu">
+                 </div>
+              </a>
+            <div class="name">Viên Thiệu</div>
+        </div>
+         <div class="character">
+             <a href="vienthuat.html" target="_blank">
+                <div class="avatar">
+                    <img src="Tinh_Vien_Thuat.webp" alt="Viên Thuật">
+                </div>
+            </a>
+
+            <div class="name">Viên Thuật</div>
+        </div>
+       
+        <div class="character">
+            <a href="luubi.html">
+                <div class="avatar">
+                    <img src="LB.jpg" alt="Lưu Bị">
+                </div>
+            </a>
+            <div class="name">Lưu Bị</div>
+        </div>
+        <div class="character">
+            <a href="giacatluong.html" target="_blank">
+                <div class="avatar">
+                    <img src="yfu1616388172.jpg" alt="Gia Cát Lượng">
+                </div>
+            </a>
+            <div class="name">Gia Cát Lượng</div>
+        </div>
+        <div class="character">
+            <a href="quanvu.html">
+                <div class="avatar">
+                    <img src="quanvu.webp" alt="Quan Vũ">
+                </div>
+            </a>
+            <div class="name">Quan Vũ</div>
+        </div>
+        <div class="character">
+            <a href="truongphi.html">
+                <div class="avatar">
+                    <img src="1488392626-4.jpg" alt="Trương Phi">
+                </div>
+            </a>
+            <div class="name">Trương Phi</div>
+        </div>
+        <div class="character">
+            <a href="trieuvan.html">
+                <div class="avatar">
+                    <img src="trieu-van-thuc-han-172673540683965414806.webp" alt="Triệu Vân">
+                </div>
+            </a>
+            <div class="name">Triệu Vân</div>
+        </div>
+        <div class="character">
+            <a href="hoangtrung.html">
+                <div class="avatar">
+                    <img src="14949410466034-280.webp" alt="Hoàng Trung">
+                </div>
+            </a>
+            <div class="name">Hoàng Trung</div>
+        </div>
+        <div class="character">
+            <a href="tonsach.html">
+                <div class="avatar">
+                    <img src="32.jpg" alt="Tôn Sách">
+                </div>
+            </a>
+            <div class="name">Tôn Sách</div>
+        </div>
+        <div class="character">
+            <a href="tonquyen.html">
+                <div class="avatar">
+                    <img src="Tqm.webp" alt="Tôn Quyền">
+                </div>
+            </a>
+            <div class="name">Tôn Quyền</div>
+        </div>
+        <div class="character">
+            <a href="chudu.html">
+                <div class="avatar">
+                    <img src="z6224866556844_01e69eb8565a7c11ae46ec284915f0af.jpg" alt="Chu Du">
+                </div>
+            </a>
+            <div class="name">Chu Du</div>
+        </div>
+        <div class="character">
+            <a href="hoangcai.html" >
+                <div class="avatar">
+                    <img src="GIOI_Hoang_Cai1.webp" alt="Hoàng Cái">
+                </div>
+            </a>
+            <div class="name">Hoàng Cái</div>
+        </div>
+        <div class="character">
+            <a href="lumong.html" >
+                <div class="avatar">
+                    <img src="images.jpg" alt="Lữ Mông">
+                </div>
+            </a>
+            <div class="name">Lữ Mông</div>
+        </div>
+        <div class="character">
+            <a href="lucton.html" >
+                <div class="avatar">
+                    <img src="148820772717306-luc-ton.webp" alt="Lục Tốn">
+                </div>
+            </a>
+            <div class="name">Lục Tốn</div>
+        </div>
+        <div class="character">
+            <a href="taothao.html">
+                <div class="avatar">
+                    <img src="Tao-Thao---tuong-gioi-nhung-cu-den-dau-co-my-nhan-la-cuop-tao-thao-1-1530765885-width500height654.webp" alt="Tào Tháo">
+                </div>
+            </a>
+            <div class="name">Tào Tháo</div>
+        </div>
+        <div class="character">
+            <a href="taonhan.html" >
+                <div class="avatar">
+                    <img src="51.jpg" alt="Tào Nhân">
+                </div>
+            </a>
+            <div class="name">Tào Nhân</div>
+        </div>
+           <div class="character">
+            <a href="truonglieu.html">
+                <div class="avatar">
+                    <img src="zhang-liao-dw8-1419157215461-crop-1419157708951-76-0-1882-2456-crop-1419158108167.webp" alt="Trương Liêu">
+                </div>
+            </a>
+            <div class="name">Trương Liêu</div>
+        </div>
+        <div class="character">
+            <a href="huachu.html">
+                <div class="avatar">
+                    <img src="huachu.png" alt="Hứa Chử">
+                </div>
+            </a>
+            <div class="name">Hứa Chử</div>
+        </div>
+        <div class="character">
+            <a href="dienvi.html">
+                <div class="avatar">
+                    <img src="Điển_vi_ol.webp" alt="Điển Vi">
+                </div>
+            </a>
+            <div class="name">Điển Vi</div>
+        </div>
+        <div class="character">
+            <a href="hahaudon.html">
+                <div class="avatar">
+                    <img src="base64-17260452945001461990609-1726045764376-1726045764680879276658-1726110019060-1726110019203469828629.webp" alt="Hạ Hầu Đôn">
+                </div>
+            </a>
+            <div class="name">Hạ Hầu Đôn</div>
+        </div>
+        <div class="character">
+            <a href="tumay.html">
+                <div class="avatar">
+                    <img src="photo-1-16505917849261934655312.webp" alt="Tư Mã Ý">
+                </div>
+            </a>
+            <div class="name">Tư Mã Ý</div>
+        </div>
+    </div>
+</body>
+</html>
